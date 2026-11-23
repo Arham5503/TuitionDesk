@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme{
+  --color-background: #F4F6FA;
+}
+/* The method depends on your Tailwind version.
+
+  Tailwind v4 (CSS-first, no config file)
+
+  Put everything in your main CSS file, the one with @import "tailwindcss";:
+
+  @import "tailwindcss";
+
+  /* 1. Custom design tokens: these generate utilities automatically 
+  @theme {
+    --color-brand: #4f46e5;        /* → bg-brand, text-brand, border-brand 
+    --font-display: "Poppins", sans-serif;  /* → font-display 
+    --spacing-18: 4.5rem;          /* → p-18, m-18, w-18 
+  }
+
+  /* 2. Your own utility: works with hover:, md:, etc. 
+  @utility btn-primary {
+    @apply px-4 py-2 rounded-lg bg-brand text-white font-semibold;
+  }
+
+  /* 3. Component classes (plain CSS layer) 
+  @layer components {
+    .card {
+      @apply p-6 rounded-xl shadow-md bg-white;
+    }
+  } */
