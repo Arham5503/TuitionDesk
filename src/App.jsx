@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router";
 import Layout from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
 import Students from "./pages/Students";
+import NotFound from "./pages/NotFound";
 function App() {
   return (
     <>
@@ -13,7 +14,7 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="students" element={<Students />} />
-          <Route path="*" element={<div>404 Not Found</div>} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </>
